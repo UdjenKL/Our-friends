@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    height: 3796px;
+}
+.header {
+    width: 1280px;
+    height: 908px;
+    background: url('../img/start-screen-background.jpg');
+}
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 60px;
+}
+.header .nav .logo h1{
+    color: #F1CDB3;
+    font-family: 'Georgia','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+}
+.header .nav .logo h6 {
+    font-family: 'Arial','sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.header .nav-menu {
+    max-width: 443px;
+    height: auto;
+}
+.header .nav-menu ul li {
+    display: inline-block;
+}
