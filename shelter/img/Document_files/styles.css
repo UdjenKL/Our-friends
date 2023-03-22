@@ -94,23 +94,23 @@ body {
     height: 82.3%;
 }
 
-.screen-content .content {
+.screen-content .about__content {
     padding-top: 183px;
     max-width: 460px;
     height: auto;
 }
 
-.screen-content .content .heading {
+.screen-content .about__content .header__donation {
     max-width: 310px;
     height: auto;
     padding-bottom: 43px;
 }
 
-.screen-content .content .subheading {
+.screen-content .about__content .header__subheading {
     padding-bottom: 40px;
 }
 
-.screen-content .content .heading h2 {
+.screen-content .about__content .header__donation h2 {
     font-family: 'Georgia', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -121,7 +121,7 @@ body {
     color: #FFFFFF;
 }
 
-.screen-content .content .subheading p {
+.screen-content .about__content .header__subheading p {
     font-family: 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -159,7 +159,7 @@ body {
     margin: 80px 90px;
 }
 
-.about .about-content .content {
+.about .about-content .about__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -169,12 +169,12 @@ body {
 
 }
 
-.about .about-content .heading {
+.about .about-content .header__donation {
     max-width: 370px;
     height: auto;
 }
 
-.about .about-content .content .heading h3 {
+.about .about-content .about__content .header__donation h3 {
     font-family: 'Georgia', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -184,7 +184,7 @@ body {
     color: #545454;
 }
 
-.about .about-content .content p {
+.about .about-content .about__content p {
     font-family: 'Arial', 'sans-serif';
     font-style: normal;
     font-weight: 400;
@@ -198,18 +198,18 @@ body {
     height: auto;
     background: #F6F6F6;
 }
-.pets .pets-content {
+.pets .pets__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
 }
-.pets .pets-content .heading {
+.pets .pets__content .header__donation {
     max-width: 400px;
     padding: 93px 440px 60px 440px;
 }
-.pets .pets-content .heading h3 {
+.pets .pets__content .header__donation h3 {
     text-indent: 1.6em;
     font-family: 'Georgia','sans-serif';
     font-style: normal;
@@ -225,7 +225,7 @@ body {
     border: 2px solid #F1CDB3;
     border-radius: 100px;
 }
-.slider {
+.pets__slider {
     max-width: 1200px;
     gap: 60px;
     height: auto;
@@ -234,13 +234,13 @@ body {
     align-items: center;
     padding-bottom: 60px;
 }
-.slider > *:nth-child(2) {
+.pets__slider > *:nth-child(2) {
     margin-right: 30px;
 }
-.slider > *:nth-child(4) {
+.pets__slider > *:nth-child(4) {
     margin-left: 30px;
 }
-.slider .card {
+.pets__slider .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +248,7 @@ body {
     background-color: #F9F9F9;
 
 }
-.slider .card h3 {
+.pets__slider .card h3 {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -258,7 +258,7 @@ body {
     color: #545454;
     margin-top: 30px;
 }
-.slider .card .card__button {
+.pets__slider .card .card__button {
     box-sizing: border-box;
     align-items: center;
     padding: 15px 45px;
@@ -274,7 +274,7 @@ body {
     letter-spacing: 0.06em;
     color: #292929;
 }
-.pets-content .pets-content__button {
+.pets__content .pets-content__button {
 
     padding: 15px 45px;
     max-width: 261px;
