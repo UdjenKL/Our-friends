@@ -3,18 +3,13 @@
   padding: 0;
 }
 
-//.container {
-//  margin: 0 auto;
-//  width: 100%;
-//  max-width: 3840px;
-//  height: 3796px;
-//}
-
 .header {
-  margin: 0 auto;
   max-width: 3840px;
   height: 908px;
-  background: url(../img/noise_transparent@2x.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(../img/noise_transparent@2x.svg),
+  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+  #211F20;
+  margin: 0 auto;
 
   .nav {
     margin: 0 auto;
@@ -22,26 +17,16 @@
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px 40px 40px;
+    padding: 30px 40px 69px 40px;
 
     .logo {
-      .title {
-        padding-left: 3px;
-        letter-spacing: 0.1em;
-      }
-
-      .subtitle {
-        margin-top: 10px;
-        padding-left: 5px;
-      }
-
       h1 {
-        color: #F1CDB3;
         font-family: 'Georgia', 'sans-serif';
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
         line-height: 110%;
+        color: #F1CDB3;
       }
 
       h6 {
@@ -54,6 +39,16 @@
         align-items: center;
         letter-spacing: 0.1em;
         color: #FFFFFF;
+      }
+
+      .title {
+        padding-left: 3px;
+        letter-spacing: 0.1em;
+      }
+
+      .subtitle {
+        margin-top: 10px;
+        padding-left: 5px;
       }
     }
 
@@ -87,14 +82,12 @@
 }
 
 .screen-content {
-  background: url('../img/start-screen-puppy.png') no-repeat right bottom;
-  background-size: contain;
+  background: url('../img/images/start-screen-puppy.png') no-repeat right bottom;
   margin: 0 auto;
   max-width: 1200px;
-  height: 82.3%;
+  height: 82.5%;
 
   .about__content {
-
     padding-top: 183px;
     max-width: 460px;
     height: auto;
@@ -152,14 +145,12 @@
   background: white;
 
   .about-content {
+    margin: 0 auto;
+    max-width: 1280px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 80px 404px;
-
-    .about__content {
-
-    }
 
     .donation__heading {
       max-width: 370px;
