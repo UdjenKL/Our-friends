@@ -82,20 +82,17 @@
   max-width: 1200px;
   height: 82.3%;
 }
-.screen-content .content {
+.screen-content .about__content {
   padding-top: 183px;
   max-width: 460px;
   height: auto;
 }
-.screen-content .content .heading {
+.screen-content .about__content .header__donation {
   max-width: 310px;
   height: auto;
   padding-bottom: 43px;
 }
-.screen-content .content .subheading {
-  padding-bottom: 40px;
-}
-.screen-content .content .heading h2 {
+.screen-content .about__content .header__donation h2 {
   font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -105,7 +102,10 @@
   align-items: center;
   color: #FFFFFF;
 }
-.screen-content .content .subheading p {
+.screen-content .about__content .header__subheading {
+  padding-bottom: 40px;
+}
+.screen-content .about__content .header__subheading p {
   font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -137,10 +137,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /*padding: 80px 40px 100px 40px;*/
   margin: 80px 90px;
 }
-.about .about-content .content {
+.about .about-content .donation__heading {
+  max-width: 370px;
+  height: auto;
+}
+.about .about-content .about__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -148,11 +151,7 @@
   max-width: 430px;
   height: auto;
 }
-.about .about-content .heading {
-  max-width: 370px;
-  height: auto;
-}
-.about .about-content .content .heading h3 {
+.about .about-content .about__content h3 {
   font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -161,7 +160,7 @@
   letter-spacing: 0.06em;
   color: #545454;
 }
-.about .about-content .content p {
+.about .about-content .about__content p {
   font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -171,22 +170,22 @@
 }
 
 .pets {
+  background: #F6F6F6;
   max-width: 3840px;
   height: auto;
-  background: #F6F6F6;
 }
-.pets .pets-content {
+.pets .pets__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
 }
-.pets .pets-content .heading {
+.pets .pets__content .pets__heading {
   max-width: 400px;
   padding: 93px 440px 60px 440px;
 }
-.pets .pets-content .heading h3 {
+.pets .pets__content .pets__heading h3 {
   text-indent: 1.6em;
   font-family: "Georgia", "sans-serif";
   font-style: normal;
@@ -204,7 +203,7 @@
   border-radius: 100px;
 }
 
-.slider {
+.pets__slider {
   max-width: 1200px;
   gap: 55px;
   height: auto;
@@ -213,20 +212,20 @@
   align-items: center;
   padding-bottom: 60px;
 }
-.slider > *:nth-child(2) {
+.pets__slider > *:nth-child(2) {
   margin-right: 30px;
 }
-.slider > *:nth-child(4) {
+.pets__slider > *:nth-child(4) {
   margin-left: 30px;
 }
-.slider .card {
+.pets__slider .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #F9F9F9;
 }
-.slider .card h3 {
+.pets__slider .card h3 {
   font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
@@ -236,7 +235,7 @@
   color: #545454;
   margin-top: 30px;
 }
-.slider .card .card__button {
+.pets__slider .card .card__button {
   box-sizing: border-box;
   align-items: center;
   padding: 15px 45px;
@@ -253,7 +252,7 @@
   color: #292929;
 }
 
-.pets-content .pets-content__button {
+.pets__content .pets-content__button {
   padding: 15px 45px;
   max-width: 261px;
   height: 52px;
@@ -297,16 +296,116 @@
   color: #545454;
 }
 .help .help-content .list {
+  padding-top: 59px;
   max-width: 1026px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  row-gap: 61px;
+  column-gap: 119px;
 }
 .help .help-content .list .flex-item {
-  margin: 60px;
-  width: 80px;
-  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.help .help-content .list h4 {
+  padding-top: 27px;
+  font-family: "Georgia", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  white-space: nowrap;
+}
+.help .help-content h4 {
+  padding-top: 25px;
+  font-family: "Georgia", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  white-space: nowrap;
+}
+
+.donation {
+  background: #F6F6F6;
+  margin: 0 auto;
+}
+.donation .donation__content {
+  padding-top: 78px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 915px;
+  height: 282px;
+}
+.donation .donation__content .donation__main h3 {
+  padding-bottom: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation .donation__content .donation__main h5 {
+  padding-bottom: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation .donation__content .donation__credit-card {
+  margin-bottom: 30px;
+  max-width: 349px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  background: #F1CDB3;
+  border-radius: 9px;
+}
+.donation .donation__content .donation__credit-card .donation__credit-card-content {
+  display: flex;
+  max-width: 319px;
+  height: 23px;
+}
+.donation .donation__content .donation__credit-card .donation__credit-card-content h4 {
+  margin-left: 10px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.donation .donation__content p {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
 }
 
 /*# sourceMappingURL=style.css.map */
