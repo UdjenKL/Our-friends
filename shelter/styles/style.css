@@ -275,5 +275,38 @@
   height: 611px;
   background-color: white;
 }
+.help .help-content {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.help .help-content .text-heading {
+  max-width: 308px;
+}
+.help .help-content .text-heading h3 {
+  font-family: "Georgia", "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #545454;
+}
+.help .help-content .list {
+  max-width: 1026px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.help .help-content .list .flex-item {
+  margin: 60px;
+  width: 80px;
+  height: 80px;
+}
 
 /*# sourceMappingURL=style.css.map */
