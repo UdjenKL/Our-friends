@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   max-width: 3840px;
   height: 908px;
@@ -59,6 +63,10 @@
   color: #FAFAFA;
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.3s ease;
+}
+.header .nav .nav-menu ul li a {
+  color: #FAFAFA;
+  text-decoration: none;
 }
 .header .nav .nav-menu ul li:last-child {
   margin-right: 0;
@@ -353,7 +361,7 @@
 }
 .donation .donation__content .donation__main h3 {
   padding-bottom: 20px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -364,7 +372,7 @@
 }
 .donation .donation__content .donation__main h5 {
   padding-bottom: 20px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -380,7 +388,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 0;
   background: #F1CDB3;
   border-radius: 9px;
 }
@@ -393,7 +401,7 @@
 }
 .donation .donation__content .donation__credit-card .donation__credit-card-content h4 {
   margin-left: 10px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -404,7 +412,7 @@
   color: #545454;
 }
 .donation .donation__content p {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
@@ -430,7 +438,7 @@
   margin-left: 40px;
 }
 .footer .footer__content .footer__title:nth-child(2) {
-  margin-left: 0px;
+  margin-left: 0;
 }
 .footer .footer__content .footer__title h3 {
   font-family: "Georgia", "sans-serif";
@@ -470,7 +478,7 @@
 }
 .footer .footer__content .footer-mail h4 {
   padding-left: 20px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -507,7 +515,7 @@
 }
 .footer .footer__content .footer-locations .footer__boston h3 {
   padding-left: 20px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -521,7 +529,7 @@
 }
 .footer .footer__content .footer-locations .footer__london h4 {
   padding-left: 20px;
-  font-family: "Georgia";
+  font-family: "Georgia", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
