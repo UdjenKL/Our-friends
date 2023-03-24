@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .header {
   max-width: 3840px;
   height: 908px;
@@ -133,6 +134,7 @@ html {
   }
 
   .content__button {
+
     padding: 15px 45px;
     background: #F1CDB3;
     border-radius: 100px;
@@ -142,7 +144,11 @@ html {
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-    color: #292929;
+
+    a {
+      text-decoration: none;
+      color: #292929;
+    }
   }
 }
 
@@ -513,7 +519,7 @@ html {
       flex-direction: column;
       row-gap: 44px;
 
-      .footer-contacts {
+      .footer-mail {
         margin-left: 12px;
         display: flex;
         align-items: center;
@@ -528,16 +534,21 @@ html {
           font-size: 20px;
           line-height: 115%;
           letter-spacing: 0.06em;
+        }
+        a {
+          text-decoration: none;
           color: #F1CDB3;
         }
       }
     }
 
-    .footer-mail {
+    .footer-contacts {
       display: flex;
       align-items: center;
       justify-content: center;
-
+      a {
+        text-decoration: none;
+      }
       h4 {
         padding-left: 20px;
         font-family: 'Georgia','sans-serif';
@@ -578,7 +589,9 @@ html {
       .footer__boston {
         margin-top: 34px;
         display: flex;
-
+        a {
+          text-decoration: none;
+        }
         h3 {
           padding-left: 20px;
           font-family: 'Georgia','sans-serif';
@@ -595,7 +608,9 @@ html {
 
         margin-top: 37px;
         display: flex;
-
+        a {
+          text-decoration: none;
+        }
         h4 {
           padding-left: 20px;
           font-family: 'Georgia','sans-serif';
