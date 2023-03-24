@@ -126,7 +126,7 @@ html {
   line-height: 130%;
   letter-spacing: 0.06em;
 }
-.screen-content .content__button a {
+.screen-content a {
   text-decoration: none;
   color: #292929;
 }
