@@ -167,47 +167,14 @@ html {
   border: 2px solid #CDCDCD;
   border-radius: 100px;
 }
-.pets .pets__content .pets-navigation .button_paginator_inactive h4 {
-  padding: 10px;
-  font-family: "Georgia", "sans-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #CDCDCD;
-}
 .pets .pets__content .pets-navigation .button_paginator_active {
   background: #F1CDB3;
   border-radius: 100px;
   border: none;
 }
-.pets .pets__content .pets-navigation .button_paginator_active h4 {
-  padding: 10px;
-  font-family: "Georgia", "sans-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #292929;
-}
 .pets .pets__content .pets-navigation .button_paginator {
   border: 2px solid #F1CDB3;
   border-radius: 100px;
-}
-.pets .pets__content .pets-navigation .button_paginator h4 {
-  font-family: "Georgia", "sans-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #292929;
 }
 
 .footer {
