@@ -64,16 +64,21 @@ html {
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.3s ease;
 }
-.header .nav .nav-menu ul li a {
-  color: #FAFAFA;
-  text-decoration: none;
-}
 .header .nav .nav-menu ul li:last-child {
   margin-right: 0;
 }
 .header .nav .nav-menu ul li:hover {
-  border-bottom: 3px solid #F1CDB3;
   cursor: pointer;
+}
+.header .nav .nav-menu ul li a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.header .nav .nav-menu ul li:hover {
+  kursor: pointer;
+}
+.header .nav .nav-menu ul li .link-active {
+  border-bottom: 3px solid #F1CDB3;
 }
 
 .screen-content {
@@ -125,6 +130,9 @@ html {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+.screen-content .content__button:hover {
+  background: #FDDCC4;
 }
 .screen-content a {
   text-decoration: none;
@@ -212,6 +220,10 @@ html {
   border: 2px solid #F1CDB3;
   border-radius: 100px;
 }
+.button-arrow:hover {
+  background: #FDDCC4;
+  cursor: pointer;
+}
 
 .pets__slider {
   max-width: 1200px;
@@ -234,6 +246,10 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #F9F9F9;
+  transition: transform 0.3s ease-in-out;
+}
+.pets__slider .card:hover {
+  transform: scale(1.1);
 }
 .pets__slider .card h3 {
   font-family: "Georgia", "sans-serif";
@@ -261,6 +277,10 @@ html {
   letter-spacing: 0.06em;
   color: #292929;
 }
+.pets__slider .card .card__button:hover {
+  background: #FDDCC4;
+  cursor: pointer;
+}
 
 .pets__content .pets-content__button {
   padding: 15px 45px;
@@ -276,6 +296,9 @@ html {
   color: #292929;
   border: none;
   letter-spacing: 1px;
+}
+.pets__content .pets-content__button:hover {
+  background: #FDDCC4;
 }
 
 .help {

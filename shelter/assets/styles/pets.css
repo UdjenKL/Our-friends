@@ -31,6 +31,9 @@ html {
   line-height: 110%;
   color: #545454;
 }
+.header .nav .logo .subtitle a {
+  text-decoration: none;
+}
 .header .nav .logo h6 {
   font-family: "Arial", "sans-serif";
   font-style: normal;
@@ -74,8 +77,13 @@ html {
   margin-right: 0;
 }
 .header .nav .nav-menu ul li:hover {
-  border-bottom: 3px solid #F1CDB3;
   cursor: pointer;
+}
+.header .nav .nav-menu ul li:hover {
+  kursor: pointer;
+}
+.header .nav .nav-menu ul li .link-active {
+  border-bottom: 3px solid #F1CDB3;
 }
 
 .pets {
@@ -124,6 +132,10 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #F9F9F9;
+  transition: transform 0.3s ease-in-out;
+}
+.pets .pets__content .pets-cards-container .card:hover {
+  transform: scale(1.1);
 }
 .pets .pets__content .pets-cards-container .card h3 {
   font-family: "Georgia", "sans-serif";
@@ -151,6 +163,10 @@ html {
   letter-spacing: 0.06em;
   color: #292929;
 }
+.pets .pets__content .pets-cards-container .card .card__button:hover {
+  background: #FDDCC4;
+  cursor: pointer;
+}
 .pets .pets__content .pets-navigation {
   display: flex;
   padding-bottom: 100px;
@@ -167,6 +183,9 @@ html {
   border: 2px solid #CDCDCD;
   border-radius: 100px;
 }
+.pets .pets__content .pets-navigation .button_paginator_inactive:hover {
+  cursor: not-allowed;
+}
 .pets .pets__content .pets-navigation .button_paginator_active {
   background: #F1CDB3;
   border-radius: 100px;
@@ -175,6 +194,10 @@ html {
 .pets .pets__content .pets-navigation .button_paginator {
   border: 2px solid #F1CDB3;
   border-radius: 100px;
+}
+.pets .pets__content .pets-navigation .button_paginator:hover {
+  background: #FDDCC4;
+  cursor: pointer;
 }
 
 .footer {
