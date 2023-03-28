@@ -9,18 +9,29 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <title>Shelter</title>
     <style>
+        @media (max-width: 3840px) {
+            .header .logo {
+                margin-right: 570px;
+            }
+            .screen-content-img img{
+                width: 100%;
+                height: auto;
+            }
+        }
 
         /* Стили для устройств с шириной экрана 767px и меньше */
-        @media (max-width: 767px) {
-
+        @media (max-width: 768px) {
+            .header .logo {
+                margin-right: 0px;
+            }
             .nav-menu {
-                max-width:320px;
+                max-width: 320px;
                 height: 823px;
                 display: none;
                 position: absolute;
                 top: 0px;
                 left: 555px;
-                width:25%;
+                width: 25%;
                 background-color: #fff;
                 padding: 10px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -62,8 +73,6 @@
             }
 
 
-
-
             .header {
                 max-width: 768px;
                 height: auto;
@@ -73,6 +82,7 @@
                 padding: 31px 19px 60px 28px;
 
             }
+
             .header .nav .nav-menu {
                 padding: 248px 38px 20px 20px;
                 height: 823px;
@@ -258,7 +268,9 @@
                 max-width: 320px;
                 height: auto;
             }
-
+            .header .logo {
+                margin-right: 50px;
+            }
             .header .nav {
                 padding: 31px 19px 60px 20px;
             }
@@ -549,23 +561,23 @@
         </div>
     </div>
 
-<div class="screen-content">
-    <div class="about__content">
-        <div class="header__donation">
-            <h2>Not only people need a house</h2>
+    <div class="screen-content">
+        <div class="about__content">
+            <div class="header__donation">
+                <h2>Not only people need a house</h2>
+            </div>
+            <div class="header__subheading">
+                <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
+                    He or
+                    she will love you more than anybody else in the world, you will see!</p>
+            </div>
+            <a class="button content__button" href="#pets">Make a friend</a>
         </div>
-        <div class="header__subheading">
-            <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
-                He or
-                she will love you more than anybody else in the world, you will see!</p>
+        <div class="screen-content-img">
+            <img src="assets/img/images/start-screen-puppy.png" alt="dog">
         </div>
-        <a class="button content__button" href="#pets">Make a friend</a>
-    </div>
-    <div class="screen-content-img">
-        <img src="assets/img/images/start-screen-puppy.png" alt="dog">
-    </div>
 
-</div>
+    </div>
 </section>
 <section class="about">
     <div class="about-content">
