@@ -12,8 +12,9 @@
         /* Стили для устройств с шириной экрана 1279px и меньше */
         @media (max-width: 1279px) {
             .header .screen-content {
-                padding-left:40px;
+                padding-left: 40px;
             }
+
             .pets__slider {
                 gap: 11px;
             }
@@ -21,6 +22,7 @@
             .pets__slider > *:nth-child(4) {
                 display: none;
             }
+
             .footer {
                 height: auto;
             }
@@ -93,6 +95,7 @@
             }
 
         }
+
         /* Стили для устройств с шириной экрана 994px и меньше */
         @media (max-width: 994px) {
             .header .logo {
@@ -280,10 +283,12 @@
 
 
         }
+
         @media (max-width: 768px) {
             .nav-menu {
                 display: none;
             }
+
             .burger-icon {
                 display: flex;
                 flex-direction: column;
@@ -321,9 +326,11 @@
                 padding: 248px 38px 20px 20px;
                 height: 823px;
             }
+
             .nav-menu.active ul li {
                 padding-bottom: 20px;
             }
+
             .nav-menu.active ul li a {
                 text-align: center;
                 font-family: 'Arial', 'sans-serif';
@@ -333,6 +340,7 @@
                 line-height: 160%;
                 color: #FAFAFA;
             }
+
             .nav-menu {
                 max-width: 320px;
                 height: 823px;
@@ -347,11 +355,13 @@
                 z-index: 0;
 
             }
+
             .header .nav .nav-menu {
                 padding-left: 353px;
                 height: 823px;
             }
         }
+
         /* Стили для устройств с шириной экрана 711px и меньше */
         @media (max-width: 711px) {
             .pets .pets__content .pets__slider > *:nth-child(1) {
@@ -359,10 +369,11 @@
                 left: -103px;
                 top: 518px;
             }
+
             .screen-content .screen-content-img {
                 margin-top: -33px;
                 margin-left: 0;
-        }
+            }
 
             .pets__slider {
                 gap: 11px;
@@ -392,18 +403,32 @@
                 margin-top: 5px;
             }
         }
+
         /* Стили для устройств с шириной экрана 600px и меньше */
         @media (max-width: 600px) {
-            .header .nav .nav-menu {
-                padding-left: 22px;
-            }
+            /*.header .nav .nav-menu {*/
+            /*    top: 0;*/
+            /*    right: 0;*/
+            /*    width: 60%;*/
+            /*    height: 823px;*/
+            /*}*/
+            /*.nav-menu.active {*/
+            /*    max-width: 320px;*/
+            /*    right: 0;*/
+            /*    display: block;*/
+            /*    background: #292929;*/
+            /*    padding: 248px 38px 20px 20px;*/
+            /*    height: 823px;*/
+            /*}*/
             .screen-content .screen-content-img img {
                 max-width: 260px;
                 margin-left: 0;
             }
+
             .pets .pets__content .pets__heading {
                 padding: 42px 10px 42px 10px;
             }
+
             .footer {
                 max-width: 320px;
                 height: auto;
@@ -441,15 +466,18 @@
                 max-width: 380px;
                 height: auto;
             }
+
             .donation .donation__content img {
                 max-width: 260px;
             }
+
             .about-content__img {
                 padding-top: 33px;
                 padding-left: 0;
             }
+
             .footer {
-                max-width:600px;
+                max-width: 600px;
             }
 
             .footer h3 {
@@ -526,17 +554,126 @@
                 align-items: center;
             }
 
+
+            .burger-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 32px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .burger-icon span {
+                display: block;
+                height: 4px;
+                background-color: #8d7a6c;
+                border-radius: 3px;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .burger-icon.active span:first-child {
+                transform: rotate(90deg) translate(8px, 11px);
+            }
+
+            .burger-icon.active span:nth-child(2) {
+                transform: rotate(90deg) translate(-2px, -11px);
+            }
+
+            .burger-icon.active span:last-child {
+                transform: rotate(90deg) translate(-12px, 0px);
+            }
+
+
+            .nav-menu.active ul li {
+                padding-bottom: 20px;
+            }
+
+            .nav-menu.active ul li a {
+                text-align: center;
+                font-family: 'Arial', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 160%;
+                color: #FAFAFA;
+            }
+
+            /*.header .nav {*/
+            /*    margin: 0 auto;*/
+            /*    display: flex;*/
+            /*    max-width: 1200px;*/
+            /*    justify-content: space-between;*/
+            /*    align-items: center;*/
+            /*    padding: 30px 40px 29px 40px;*/
+            /*}*/
+            .nav-menu {
+                position: absolute;
+                top: 0;
+                width: 60%;
+            }
+
+            .header .nav {
+                margin: 0 auto;
+                display: flex;
+                max-width: 600px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 30px 40px 29px 40px;
+            }
+
+            .header .nav .nav-menu {
+                margin-left: 30%;
+                max-width: 443px;
+                padding-left: 20px;
+                height: 823px;
+            }
+
+            .nav-menu.active {
+                max-width: 320px;
+                right: 0;
+                display: block;
+                background: #292929;
+                padding: 248px 38px 20px 20px;
+                top: 0;
+            }
+
+            .header .nav .nav-menu {
+                max-width: 320px;
+                padding-left: 20px;
+                height: 823px;
+            }
+
         }
+
+        @media (max-width: 375px) {
+            .header .nav .nav-menu {
+                max-width: 320px;
+                padding-left: 22px;
+                width: auto;
+            }
+
+            .header .nav .nav-menu {
+                margin-left: 0;
+            }
+
+            .header .nav .nav-menu ul li{
+                margin-right: 0;
+            }
+        }
+
         /* Стили для устройств с шириной экрана 320px и меньше */
         @media (max-width: 320px) {
 
             .header .screen-content {
                 padding-left: 0;
             }
+
             .pets__slider > *:nth-child(2) {
                 margin-right: -2px;
                 margin-top: -60px;
             }
+
             .burger-icon {
                 display: flex;
                 flex-direction: column;
@@ -568,15 +705,17 @@
 
             .nav-menu.active {
                 width: 320px;
-                left: 50px;
+                left: 0;
                 display: block;
                 background: #292929;
                 padding: 248px 38px 20px 20px;
                 height: 823px;
             }
+
             .nav-menu.active ul li {
                 padding-bottom: 20px;
             }
+
             .nav-menu.active ul li a {
                 text-align: center;
                 font-family: 'Arial', 'sans-serif';
@@ -607,6 +746,7 @@
             }
 
             .header .nav .nav-menu {
+                margin-left: 0;
                 padding: 248px 38px 20px 20px;
                 height: 823px;
             }
@@ -1094,16 +1234,18 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .pets .pets__content .pets__slider > *:nth-child(1) {
                 position: relative;
                 left: -65px;
                 top: 455px;
             }
+
             .pets .pets__content .pets__slider > *:nth-child(2) {
                 margin-top: 0;
             }
-
         }
+
     </style>
 </head>
 <body>
