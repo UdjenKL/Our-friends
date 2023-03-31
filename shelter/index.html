@@ -280,6 +280,78 @@
 
 
         }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .burger-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 32px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .burger-icon span {
+                display: block;
+                height: 4px;
+                background-color: #8d7a6c;
+                border-radius: 3px;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .burger-icon.active span:first-child {
+                transform: rotate(90deg) translate(8px, 11px);
+            }
+
+            .burger-icon.active span:nth-child(2) {
+                transform: rotate(90deg) translate(-2px, -11px);
+            }
+
+            .burger-icon.active span:last-child {
+                transform: rotate(90deg) translate(-12px, 0px);
+            }
+
+            .nav-menu.active {
+                width: 320px;
+                left: 50px;
+                display: block;
+                background: #292929;
+                padding: 248px 38px 20px 20px;
+                height: 823px;
+            }
+            .nav-menu.active ul li {
+                padding-bottom: 20px;
+            }
+            .nav-menu.active ul li a {
+                text-align: center;
+                font-family: 'Arial', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 160%;
+                color: #FAFAFA;
+            }
+            .nav-menu {
+                max-width: 320px;
+                height: 823px;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 555px;
+                width: 25%;
+                background-color: #fff;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                z-index: 0;
+
+            }
+            .header .nav .nav-menu {
+                padding-left: 353px;
+                height: 823px;
+            }
+        }
         /* Стили для устройств с шириной экрана 711px и меньше */
         @media (max-width: 711px) {
             .pets .pets__content .pets__slider > *:nth-child(1) {
