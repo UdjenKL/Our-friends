@@ -8,157 +8,1263 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <title>Shelter</title>
+    <style>
+        /* Стили для устройств с шириной экрана 1279px и меньше */
+        @media (max-width: 1279px) {
+            .header .screen-content {
+                padding-left:40px;
+            }
+            .pets__slider {
+                gap: 11px;
+            }
+
+            .pets__slider > *:nth-child(4) {
+                display: none;
+            }
+            .footer {
+                height: auto;
+            }
+
+            .footer .footer__content {
+                height: auto;
+                flex-direction: column-reverse;
+            }
+
+            .donation__content .donation__main {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .donation__content .donation__main .donation__credit-card {
+                max-width: 349px;
+                height: auto;
+            }
+
+            .donation__content p {
+                padding-bottom: 56px;
+            }
+
+            .donation__credit-card-content {
+                padding: 0 15px 0 15px;
+            }
+
+            .donation__legal-information {
+                max-width: 380px;
+                height: auto;
+            }
+
+            .pets .pets__content .pets__heading {
+                padding: 0;
+            }
+
+            .footer h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+            }
+
+            .footer .footer__content {
+                flex-direction: column;
+                padding-top: 32px;
+                row-gap: 20px;
+            }
+
+            .footer .footer__content .footer__content-main {
+                gap: 64px;
+            }
+
+            .footer .footer__content .footer__title {
+                margin-left: 0;
+            }
+
+            .footer .footer__content .footer__contacts .footer-mail {
+                margin-left: 0;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .footer .footer__content .footer-contacts {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+        }
+        /* Стили для устройств с шириной экрана 994px и меньше */
+        @media (max-width: 994px) {
+            .header .logo {
+                margin-right: 0;
+            }
+
+            .header {
+                max-width: 994px;
+                height: auto;
+            }
+
+            .header .nav {
+                padding: 31px 19px 60px 28px;
+
+            }
+
+            .header .nav .nav-menu {
+                padding-left: 70px;
+            }
+
+            .screen-content .content__button {
+                margin: 0 auto;
+            }
+
+            .footer .footer__content {
+                column-gap: 0;
+            }
+
+            .pets .pets__content .pets__heading {
+                padding: 0;
+            }
+
+            .pets__slider {
+                gap: 11px;
+            }
+
+            .pets__slider > *:nth-child(4) {
+                display: none;
+            }
+
+            .header .screen-content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 42px;
+            }
+
+            .screen-content .screen-content-img {
+                margin-top: -33px;
+                margin-left: 138px;
+            }
+
+            .screen-content .screen-content-img img {
+                max-width: 569px;
+            }
+
+            .about {
+                margin: 0 auto;
+                max-width: 768px;
+                height: auto;
+            }
+
+            .about .about-content {
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                gap: 20px;
+            }
+
+            .about__content h3 {
+                padding-bottom: 25px;
+            }
+
+            .about .about-content p {
+                padding-bottom: 25px;
+            }
+
+            .about-content__img {
+                padding-top: 33px;
+                padding-left: 65px;
+            }
+
+            .pets .pets__content .pets__heading {
+                padding: 76px 179px 60px 184px;
+            }
+
+            .help {
+                max-width: 768px;
+                height: auto;
+            }
+
+            .help .help-content {
+                padding-bottom: 93px;
+            }
+
+            .help .help-content .list {
+                row-gap: 58px;
+                column-gap: 61px;
+            }
+
+            .help .help-content .list .flex-item {
+                width: 170px;
+                height: auto;
+            }
+
+            .donation {
+                max-width: 994px;
+                height: auto;
+            }
+
+            .donation .donation__content {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                padding-top: 82px;
+
+            }
+
+            .footer {
+                height: auto;
+            }
+
+            .footer .footer__content {
+                height: auto;
+                flex-direction: column-reverse;
+            }
+
+            .donation__content .donation__main {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            .donation__content .donation__main .donation__credit-card {
+                max-width: 349px;
+                height: auto;
+            }
+
+            .donation__content p {
+                padding-bottom: 56px;
+            }
+
+            .donation__credit-card-content {
+                padding: 0 15px 0 15px;
+            }
+
+            .donation__legal-information {
+                max-width: 380px;
+                height: auto;
+            }
+
+            .footer h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+            }
+
+            .footer .footer__content {
+                flex-direction: column;
+                padding-top: 32px;
+                row-gap: 20px;
+            }
+
+            .footer .footer__content .footer__content-main {
+                gap: 64px;
+            }
+
+            .footer .footer__content .footer__title {
+                margin-left: 0;
+            }
+
+            .footer .footer__content .footer__contacts .footer-mail {
+                margin-left: 0;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .footer .footer__content .footer-contacts {
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+
+        }
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .burger-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 32px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .burger-icon span {
+                display: block;
+                height: 4px;
+                background-color: #8d7a6c;
+                border-radius: 3px;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .burger-icon.active span:first-child {
+                transform: rotate(90deg) translate(8px, 11px);
+            }
+
+            .burger-icon.active span:nth-child(2) {
+                transform: rotate(90deg) translate(-2px, -11px);
+            }
+
+            .burger-icon.active span:last-child {
+                transform: rotate(90deg) translate(-12px, 0px);
+            }
+
+            .nav-menu.active {
+                width: 320px;
+                left: 50px;
+                display: block;
+                background: #292929;
+                padding: 248px 38px 20px 20px;
+                height: 823px;
+            }
+            .nav-menu.active ul li {
+                padding-bottom: 20px;
+            }
+            .nav-menu.active ul li a {
+                text-align: center;
+                font-family: 'Arial', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 160%;
+                color: #FAFAFA;
+            }
+            .nav-menu {
+                max-width: 320px;
+                height: 823px;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 555px;
+                width: 25%;
+                background-color: #fff;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                z-index: 0;
+
+            }
+            .header .nav .nav-menu {
+                padding-left: 353px;
+                height: 823px;
+            }
+        }
+        /* Стили для устройств с шириной экрана 711px и меньше */
+        @media (max-width: 711px) {
+            .pets .pets__content .pets__slider > *:nth-child(1) {
+                position: relative;
+                left: -103px;
+                top: 518px;
+            }
+            .screen-content .screen-content-img {
+                margin-top: -33px;
+                margin-left: 0;
+        }
+
+            .pets__slider {
+                gap: 11px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .pets__slider > *:nth-child(1) {
+                position: absolute;
+                width: 52px;
+                height: 52px;
+                left: 48px;
+                top: 2680px;
+            }
+
+            .pets__slider > *:nth-child(3) {
+                display: none;
+            }
+
+            .pets__slider > *:nth-child(4) {
+                display: none;
+            }
+
+            .pets__slider > *:nth-child(5) {
+                margin-left: 130px;
+                margin-top: 5px;
+            }
+        }
+        /* Стили для устройств с шириной экрана 600px и меньше */
+        @media (max-width: 600px) {
+
+            .screen-content .screen-content-img img {
+                max-width: 260px;
+                margin-left: 0;
+            }
+            .pets .pets__content .pets__heading {
+                padding: 42px 10px 42px 10px;
+            }
+            .footer {
+                max-width: 320px;
+                height: auto;
+            }
+
+            .footer .footer__content .footer-locations .footer__title {
+                max-width: 278px;
+                height: auto;
+            }
+
+            .footer .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content {
+                height: auto;
+                flex-direction: column-reverse;
+            }
+
+
+            .donation__content p {
+                padding-bottom: 56px;
+            }
+
+
+            .donation__legal-information {
+                max-width: 380px;
+                height: auto;
+            }
+            .donation .donation__content img {
+                max-width: 260px;
+            }
+            .about-content__img {
+                padding-top: 33px;
+                padding-left: 0;
+            }
+            .footer {
+                max-width:600px;
+            }
+
+            .footer h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+            }
+
+            .footer .footer__content {
+                flex-direction: column;
+                padding-top: 32px;
+                row-gap: 20px;
+            }
+
+            .footer .footer__content .footer-locations .footer__boston {
+                margin-left: 10px;
+            }
+
+            .footer .footer__content .footer-locations .footer__london {
+                margin-left: 10px;
+            }
+
+            .footer .footer__content .footer__content-main {
+                gap: 30px;
+                flex-direction: column;
+            }
+
+            .footer .footer__content .footer__dog {
+                padding-top: 0;
+                width: 90%;
+            }
+
+            .footer .footer__content .footer__title {
+                margin-left: 0;
+                max-width: 278px;
+                height: auto;
+                padding: 0 21px 0 30px;
+            }
+
+            .footer .footer__content .footer-locations .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content .footer__contacts .footer-mail {
+                margin-left: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer .footer__content .footer-contacts {
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+        /* Стили для устройств с шириной экрана 320px и меньше */
+        @media (max-width: 320px) {
+
+            .header .screen-content {
+                padding-left: 0;
+            }
+            .pets__slider > *:nth-child(2) {
+                margin-right: -2px;
+                margin-top: -60px;
+            }
+            .burger-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 32px;
+                height: 24px;
+                cursor: pointer;
+            }
+
+            .burger-icon span {
+                display: block;
+                height: 4px;
+                background-color: #8d7a6c;
+                border-radius: 3px;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .burger-icon.active span:first-child {
+                transform: rotate(90deg) translate(8px, 11px);
+            }
+
+            .burger-icon.active span:nth-child(2) {
+                transform: rotate(90deg) translate(-2px, -11px);
+            }
+
+            .burger-icon.active span:last-child {
+                transform: rotate(90deg) translate(-12px, 0px);
+            }
+
+            .nav-menu.active {
+                width: 320px;
+                left: 50px;
+                display: block;
+                background: #292929;
+                padding: 248px 38px 20px 20px;
+                height: 823px;
+            }
+            .nav-menu.active ul li {
+                padding-bottom: 20px;
+            }
+            .nav-menu.active ul li a {
+                text-align: center;
+                font-family: 'Arial', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 160%;
+                color: #FAFAFA;
+            }
+
+            .nav-menu {
+                max-width: 320px;
+                height: 823px;
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 555px;
+                width: 25%;
+                background-color: #fff;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                z-index: 0;
+            }
+
+            .header {
+                max-width: 320px;
+                height: auto;
+            }
+
+            .header .nav .nav-menu {
+                padding: 248px 38px 20px 20px;
+                height: 823px;
+            }
+
+            .header .logo {
+                margin-right: 50px;
+            }
+
+            .header .nav {
+                padding: 31px 19px 60px 20px;
+            }
+
+            .nav-menu {
+                display: none;
+                left: 220px;
+            }
+
+            .screen-content .content__button {
+                margin: 0 auto;
+            }
+
+            .header .screen-content {
+                gap: 45px;
+            }
+
+            .footer .footer__content {
+                column-gap: 0;
+            }
+
+            .screen-content-img {
+                width: 100%;
+                padding-left: 59px;
+            }
+
+            .pets .pets__content .pets__heading {
+                padding: 42px 10px 42px 10px;
+            }
+
+            .pets__slider {
+                gap: 11px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .pets .pets__content .pets__slider > *:nth-child(1) {
+                position: absolute;
+                width: 52px;
+                height: 52px;
+                left: -65px;
+                top: 456px;
+            }
+
+            .pets__slider > *:nth-child(3) {
+                display: none;
+            }
+
+            .pets__slider > *:nth-child(4) {
+                display: none;
+            }
+
+            .pets__slider > *:nth-child(5) {
+                margin-left: 130px;
+                margin-top: 5px;
+            }
+
+            .pets .pets__content .pets__heading {
+                max-width: 300px;
+                height: auto;
+            }
+
+            .pets .pets__content .pets__heading h3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+                color: #545454;
+                text-indent: 53px;
+            }
+
+            .header__donation {
+                max-width: 300px;
+                height: auto;
+            }
+
+            .header__subheading {
+                max-width: 300px;
+                height: auto;
+                padding: 42px 10px 57px 10px;
+
+            }
+
+            .header__subheading p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                align-items: center;
+                text-align: center;
+                color: #CDCDCD;
+            }
+
+            .header .screen-content .header__donation h2 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+            }
+
+            .header .screen-content {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 42px;
+            }
+
+            .screen-content .screen-content-img {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: -26px;
+                margin-right: 19px;
+                max-width: 260px;
+                margin-left: 0;
+            }
+
+            .screen-content .screen-content-img img {
+                max-width: 260px;
+                margin-left: 0;
+            }
+
+
+            .screen-content .about__content .header__donation {
+                padding: 0 50px 0 50px;
+            }
+
+            .about {
+
+                max-width: 320px;
+                height: auto;
+            }
+
+            .about .about-content {
+                margin-top: 35px;
+                margin-bottom: 0;
+                flex-direction: column-reverse;
+                row-gap: 20px;
+                gap: 20px;
+
+            }
+
+            .about .about-content .about__content {
+                padding: 0 25px 0 25px;
+            }
+
+            .about .about-content .about__content .heading {
+                max-width: 300px;
+                height: auto;
+                padding-left: 26px;
+            }
+
+            .about .about-content .about__content .heading h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+            }
+
+            .about .about-content-img {
+                width: 260px;
+                height: 353px;
+                padding: 0 30px 42px 30px;
+
+            }
+
+            .about .about-content-img .about-content__img {
+                padding: 0;
+                width: 100%;
+            }
+
+            .about__content h3 {
+                padding-bottom: 25px;
+            }
+
+            .about .about-content p {
+                padding-bottom: 25px;
+            }
+
+
+            .help {
+                max-width: 320px;
+                height: auto;
+            }
+
+            .help .help-content {
+                padding: 0 15px 42px 15px;
+                max-width: 320px;
+                height: auto;
+            }
+
+            .help .help-content .text-heading {
+                max-width: 320px;
+                height: auto;
+                padding: 42px 10px 42px 10px;
+            }
+
+            .help .help-content .text-heading h3 {
+                display: flex;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+            }
+
+            .help .help-content .list {
+                padding-top: 0;
+                row-gap: 25px;
+                column-gap: 30px;
+            }
+
+            .help .help-content .list .flex-item {
+                width: 130px;
+                height: auto;
+            }
+
+            .help .help-content .list > *:nth-child(1) {
+                margin-top: -17px;
+            }
+
+            .help .help-content .list > *:nth-child(6) {
+                margin-top: 13px;
+            }
+
+            .help .help-content .list > *:nth-child(7) {
+                margin-top: 7px;
+            }
+
+            .help .help-content .list > *:nth-child(9) {
+                margin-left: -159px;
+            }
+
+            .help .help-content .list .flex-item img {
+                max-width: 49px;
+                height: auto;
+            }
+
+            .help .help-content .list .flex-item h4 {
+                padding-top: 20px;
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 110%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+            }
+
+            .pets__slider {
+                padding-bottom: 47px;
+            }
+
+            .pets__slider > *:nth-child(1) {
+
+                left: 68px;
+                top: 2457px;
+            }
+
+            .pets__slider > *:nth-child(2) {
+                margin-top: 0;
+                margin-right: -2px;
+            }
+
+            .pets__content .pets-content__button {
+                margin-bottom: 42px;
+            }
+
+            .donation {
+                max-width: 320px;
+                height: auto;
+            }
+
+            .donation__content .donation__main .donation__credit-card {
+                max-width: 280px;
+                height: auto;
+            }
+
+            .donation__credit-card-content {
+                padding: 0 15px 0 15px;
+            }
+
+            .donation .donation__content .donation__credit-card {
+                padding-left: 0;
+                padding-bottom: 10px;
+            }
+
+            .donation__content .donation__main .donation__credit-card .donation__credit-card-content h4 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 110%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+            }
+
+            .donation .donation__content {
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                padding-top: 23px;
+                padding-bottom: 32px;
+
+            }
+
+            .donation__content .donation__main {
+                align-items: center;
+            }
+
+            .donation__heading {
+                max-width: 300px;
+                height: auto;
+                padding: 21px 10px 0 10px;
+            }
+
+            .donation .donation__content .donation__main h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+            }
+
+            .donation .donation__content .donation__main h5 {
+                padding-bottom: 25px;
+            }
+
+            .donation .donation__content img {
+                max-width: 260px;
+
+            }
+
+            .donation__legal-information {
+                max-width: 280px;
+                height: auto;
+                padding: 0 20px 0 20px;
+            }
+
+            .footer {
+                max-width: 320px;
+                height: auto;
+            }
+
+            .footer .footer__content .footer-locations .footer__title {
+                max-width: 278px;
+                height: auto;
+            }
+
+            .footer .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content {
+                height: auto;
+                flex-direction: column-reverse;
+            }
+
+
+            .donation__content p {
+                padding-bottom: 56px;
+            }
+
+
+            .donation__legal-information {
+                max-width: 380px;
+                height: auto;
+            }
+
+            .footer h3 {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+            }
+
+            .footer .footer__content {
+                flex-direction: column;
+                padding-top: 32px;
+                row-gap: 20px;
+            }
+
+            .footer .footer__content .footer-locations .footer__boston {
+                margin-left: 10px;
+            }
+
+            .footer .footer__content .footer-locations .footer__london {
+                margin-left: 10px;
+            }
+
+            .footer .footer__content .footer__content-main {
+                gap: 30px;
+                flex-direction: column;
+            }
+
+            .footer .footer__content .footer__dog {
+                padding-top: 0;
+                width: 90%;
+            }
+
+            .footer .footer__content .footer__title {
+                margin-left: 0;
+                max-width: 278px;
+                height: auto;
+                padding: 0 21px 0 30px;
+            }
+
+            .footer .footer__content .footer-locations .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content .footer__title h3 {
+                font-family: 'Georgia', 'sans-serif';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #FFFFFF;
+
+            }
+
+            .footer .footer__content .footer__contacts .footer-mail {
+                margin-left: 0;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer .footer__content .footer-contacts {
+                justify-content: center;
+                align-items: center;
+            }
+            .pets .pets__content .pets__slider > *:nth-child(1) {
+                position: relative;
+                left: -65px;
+                top: 455px;
+            }
+            .pets .pets__content .pets__slider > *:nth-child(2) {
+                margin-top: 0;
+            }
+
+        }
+    </style>
 </head>
-
 <body>
-    <section class="header">
-        <div class="nav">
-            <div class="logo">
-                <div class="title">
-                    <h1>Cozy House</h1>
-                </div>
-                <div class="subtitle">
-                    <h6>Shelter for pets in Boston</h6>
-                </div>
+<section class="header">
+    <div class="nav">
+        <div class="logo">
+            <div class="title">
+                <h1>Cozy House</h1>
             </div>
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#" class="link-active">About the shelter</a></li>
-                    <li><a href="Pets.html">Our pets</a></li>
-                    <li><a href="#help">Help the shelter</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+            <div class="subtitle">
+                <h6>Shelter for pets in Boston</h6>
             </div>
         </div>
-        <div class="screen-content">
-            <div class="about__content">
-                <div class="header__donation">
-                    <h2>Not only people need a house</h2>
-                </div>
-                <div class="header__subheading">
-                    <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
-                        He or
-                        she will love you more than anybody else in the world, you will see!</p>
-                </div>
-                <a class="button content__button" href="#pets">Make a friend</a>
-            </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class="link-active">About the shelter</a></li>
+                <li><a href="Pets.html">Our pets</a></li>
+                <li><a href="#help">Help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
+    <div class="screen-content">
+        <div class="about__content">
+            <div class="header__donation">
+                <h2>Not only people need a house</h2>
+            </div>
+            <div class="header__subheading">
+                <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
+                    He or
+                    she will love you more than anybody else in the world, you will see!</p>
+            </div>
+            <a class="button content__button" href="#pets">Make a friend</a>
         </div>
-    </section>
-    <section class="about">
-        <div class="about-content">
-            <div class="about-content-img">
-                <img class="about-content__img" src="assets/img/images/about-pets.png" alt="#">
+        <div class="screen-content-img">
+            <img src="assets/img/images/start-screen-puppy.png" alt="dog">
+        </div>
+
+    </div>
+</section>
+<section class="about">
+    <div class="about-content">
+        <div class="about-content-img">
+            <img class="about-content__img" src="assets/img/images/about-pets.png" alt="#">
+        </div>
+        <div class="about__content">
+            <div class="heading">
+                <h3>About the shelter <br>“Cozy House”</h3>
             </div>
-            <div class="about__content">
-                <div class="heading">
-                    <h3>About the shelter <br>“Cozy House”</h3>
-                </div>
-                <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them
-                    will
-                    find a family. The others will continue to live with us and will be waiting for a lucky chance
-                    to
-                    become dearly loved.</p>
-                <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable
-                    (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
-                    various
-                    skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the
-                    animals,
-                    they become attached to the pets and would hardly ever leave them alone.</p>
+            <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them
+                will
+                find a family. The others will continue to live with us and will be waiting for a lucky chance
+                to
+                become dearly loved.</p>
+            <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable
+                (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
+                various
+                skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the
+                animals,
+                they become attached to the pets and would hardly ever leave them alone.</p>
+        </div>
+    </div>
+</section>
+<section class="pets" id="pets">
+    <div class="pets__content">
+        <div class="pets__heading">
+            <h3>Our friends who are looking for a house</h3>
+        </div>
+        <div class="pets__slider">
+            <button class="button-arrow">
+                <img src="assets/img/images/ArrowLeft.png" alt="#" class="button-arrow__img">
+            </button>
+            <div class="card">
+                <img class="card__img" src="assets/img/images/Katrine.png" alt="#">
+                <h3>Katrine</h3>
+                <button class="card__button">Learn more</button>
+            </div>
+            <div class="card">
+                <img class="card__img" src="assets/img/images/pets-jennifer.png" alt="#">
+                <h3>Jennifer</h3>
+                <button class="card__button">Learn more</button>
+            </div>
+            <div class="card">
+                <img class="card__img" src="assets/img/images/pets-woody.png" alt="#">
+                <h3>Woody</h3>
+                <button class="card__button">Learn more</button>
+            </div>
+            <button class="button-arrow">
+                <img src="assets/img/images/ArrowRight.png" alt="#" class="button-arrow__img">
+            </button>
+        </div>
+        <button class="pets-content__button">Get to know the rest</button>
+    </div>
+</section>
+<section class="help" id="help">
+    <div class="help-content">
+        <div class="text-heading">
+            <h3>How you can help our shelter</h3>
+        </div>
+        <div class="list">
+            <div class="flex-item"><img src="assets/img/svg/petfood.svg" alt="img">
+                <h4>Pet food</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/transportation.svg" alt="img">
+                <h4>Transportation</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/toys.svg" alt="img">
+                <h4>Toys</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/bowls-and-cups.svg" alt="img">
+                <h4>Bowls and cups</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/shampoos.svg" alt="img">
+                <h4>Shampoos</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/vitamins.svg" alt="img">
+                <h4>Vitamins</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/medicines.svg" alt="img">
+                <h4>Medicines</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/collars-or-leashes.svg" alt="img">
+                <h4>Collars / leashes</h4>
+            </div>
+            <div class="flex-item"><img src="assets/img/svg/sleeping-area.svg" alt="img">
+                <h4>Sleeping areas</h4>
             </div>
         </div>
-    </section>
-    <section class="pets" id="pets">
-        <div class="pets__content">
-            <div class="pets__heading">
-                <h3>Our friends who are looking for a house</h3>
+    </div>
+</section>
+<section class="donation">
+    <div class="donation__content">
+        <img src="assets/img/images/donation-dog.png" alt="dog">
+        <div class="donation__main">
+            <div class="donation__heading">
+                <h3>You can also<br> make a donation</h3>
             </div>
-            <div class="pets__slider">
-                <button class="button-arrow">
-                    <img src="assets/img/images/ArrowLeft.png" alt="#" class="button-arrow__img">
-                </button>
-                <div class="card">
-                    <img class="card__img" src="assets/img/images/Katrine.png" alt="#">
-                    <h3>Katrine</h3>
-                    <button class="card__button">Learn more</button>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="assets/img/images/pets-jennifer.png" alt="#">
-                    <h3>Jennifer</h3>
-                    <button class="card__button">Learn more</button>
-                </div>
-                <div class="card">
-                    <img class="card__img" src="assets/img/images/pets-woody.png" alt="#">
-                    <h3>Woody</h3>
-                    <button class="card__button">Learn more</button>
-                </div>
-                <button class="button-arrow">
-                    <img src="assets/img/images/ArrowRight.png" alt="#" class="button-arrow__img">
-                </button>
+            <div class="donation__subheading">
+                <h5>Name of the bank / Type of bank account</h5>
             </div>
-            <button class="pets-content__button">Get to know the rest</button>
-        </div>
-    </section>
-    <section class="help" id="help">
-        <div class="help-content">
-            <div class="text-heading">
-                <h3>How you can help our shelter</h3>
-            </div>
-            <div class="list">
-                <div class="flex-item"><img src="assets/img/svg/petfood.svg" alt="img">
-                    <h4>Pet food</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/transportation.svg" alt="img">
-                    <h4>Transportation</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/toys.svg" alt="img">
-                    <h4>Toys</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/bowls-and-cups.svg" alt="img">
-                    <h4>Bowls and cups</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/shampoos.svg" alt="img">
-                    <h4>Shampoos</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/vitamins.svg" alt="img">
-                    <h4>Vitamins</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/medicines.svg" alt="img">
-                    <h4>Medicines</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/collars-or-leashes.svg" alt="img">
-                    <h4>Collars / leashes</h4>
-                </div>
-                <div class="flex-item"><img src="assets/img/svg/sleeping-area.svg" alt="img">
-                    <h4>Sleeping areas</h4>
+            <div class="donation__credit-card">
+                <div class="donation__credit-card-content">
+                    <img src="assets/img/svg/credit-card.svg" alt="card">
+                    <h4>8380 2880 8028 8791 7435</h4>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="donation">
-        <div class="donation__content">
-            <img src="assets/img/images/donation-dog.png" alt="dog">
-            <div class="donation__main">
-                <div class="donation__heading">
-                    <h3>You can also<br> make a donation</h3>
-                </div>
-                <div class="donation__subheading">
-                    <h5>Name of the bank / Type of bank account</h5>
-                </div>
-                <div class="donation__credit-card">
-                    <div class="donation__credit-card-content">
-                        <img src="assets/img/svg/credit-card.svg" alt="card">
-                        <h4>8380 2880 8028 8791 7435</h4>
-                    </div>
-                </div>
+            <div class="donation__legal-information">
                 <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at
                     libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
                     malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
         </div>
-    </section>
-    <section class="footer" id="contacts">
-        <div class="footer__content">
+    </div>
+</section>
+<section class="footer" id="contacts">
+    <div class="footer__content">
+        <div class="footer__content-main">
             <div class="footer__contacts">
                 <div class="footer__title">
                     <h3> For questions and suggestions</h3>
@@ -169,7 +1275,7 @@
                 </div>
                 <div class="footer-contacts">
                     <a href="tel:+136745677554">
-                    <img src="assets/img/svg/phone.svg" alt="phone">
+                        <img src="assets/img/svg/phone.svg" alt="phone">
                     </a>
                     <a href="tel:+136745677554">
                         <h4>+13 674 567 75 54</h4>
@@ -182,24 +1288,26 @@
                 </div>
                 <div class="footer__boston">
                     <a href="https://goo.gl/maps/aKZfPkppUsDRDRKr5" target="_blank">
-                    <img src="assets/img/svg/pin.svg" alt="mail">
+                        <img src="assets/img/svg/pin.svg" alt="mail">
                     </a>
                     <a href="https://goo.gl/maps/aKZfPkppUsDRDRKr5" target="_blank">
-                    <h3>1 Central Street, Boston<br> (entrance from the store)</h3>
+                        <h3>1 Central Street, Boston<br> (entrance from the store)</h3>
                     </a>
                 </div>
                 <div class="footer__london">
                     <a href="https://goo.gl/maps/aKZfPkppUsDRDRKr5" target="_blank">
-                    <img src="assets/img/svg/pin.svg" alt="phone">
+                        <img src="assets/img/svg/pin.svg" alt="phone">
                     </a>
                     <a href="https://goo.gl/maps/aKZfPkppUsDRDRKr5" target="_blank">
-                    <h4>18 South Park, London</h4>
+                        <h4>18 South Park, London</h4>
                     </a>
                 </div>
             </div>
-            <img class="footer__dog" src="assets/img/images/footer-puppy.png" alt="img">
         </div>
-    </section>
+        <img class="footer__dog" src="assets/img/images/footer-puppy.png" alt="img">
+    </div>
+</section>
+<script src="assets/scripts/burger.js"></script>
 <script src="assets/scripts/index.js"></script>
 </body>
 </html>
