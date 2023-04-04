@@ -1,6 +1,5 @@
 // Выбираем элемент контейнера для карточек
 const cardContainer = document.querySelector(".pets__slider");
-console.log(cardContainer);
 
 let currentIndex = 0;
 let pets = null;
@@ -12,7 +11,6 @@ fetch("assets/img/images/pets.json")
     .then(data => {
         pets = data;
         showPet(currentIndex);// Показываем первую карточку животного
-        console.log(pets);
     })
     .catch(error => console.error(error));
 
@@ -64,6 +62,49 @@ function showPet(index) {
 
     buttonLeft.addEventListener('click', showPrevPet);
     buttonRight.addEventListener('click', showNextPet);
+
+
+
+
+    // Добавляем обработчики событий для кнопок "Learn more" в каждой карточке
+    const buttons = document.querySelectorAll('.card__button');
+    console.log(buttons);
+    buttons.forEach(button => button.addEventListener('click', showPetModal));
+
+
+    function showPetModal(event) {
+        // Получаем контент, который нужно отобразить в попапе
+        const popupContent = `
+        <h2>${pet.name}</h2>
+        <img src="${pet.img}" alt="${pet.name}">
+        <p>${pet.description}</p>
+    `;
+
+        // Добавляем html-код попапа в конец body-элемента
+        const popup = document.createElement('div');
+        popup.classList.add('popup');
+        popup.innerHTML = `
+        <div class="popup__content">
+            ${popupContent}
+            <button class="popup__close">Закрыть</button>
+        </div>
+    `;
+        document.body.appendChild(popup);
+
+        // Находим кнопку закрытия попапа и добавляем обработчик события
+        const popupCloseButton = popup.querySelector('.popup__close');
+        popupCloseButton.addEventListener('click', hidePopup);
+
+        // Показываем попап
+        popup.style.display = 'block';
+
+        // Функция для скрытия попапа
+        function hidePopup() {
+            popup.style.display = 'none';
+            popupCloseButton.removeEventListener('click', hidePopup);
+            popup.remove();
+        }
+    }
 }
 
 
@@ -84,3 +125,4 @@ function showNextPet() {
     }
     showPet(currentIndex);
 }
+
