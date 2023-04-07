@@ -68,27 +68,26 @@ function showPet(index) {
 
     // Добавляем обработчики событий для кнопок "Learn more" в каждой карточке
     const buttons = document.querySelectorAll('.card__button');
-    console.log(buttons);
-    buttons.forEach(button => button.addEventListener('click', showPetModal));
+    buttons.forEach((button, index) => button.addEventListener('click', (event) => showPetModal(event, pets[index])));
 
 
-    function showPetModal(event) {
+    function showPetModal(event, pet) {
         // Получаем контент, который нужно отобразить в попапе
         const popupContent = `
-        <h2>${pet.name}</h2>
-        <img src="${pet.img}" alt="${pet.name}">
-        <p>${pet.description}</p>
-    `;
+          <h2>${pet.name}</h2>
+          <img src="${pet.img}" alt="${pet.name}">
+          <p>${pet.description}</p>
+        `;
 
         // Добавляем html-код попапа в конец body-элемента
         const popup = document.createElement('div');
         popup.classList.add('popup');
         popup.innerHTML = `
-        <div class="popup__content">
+          <div class="popup__content">
             ${popupContent}
             <button class="popup__close">Закрыть</button>
-        </div>
-    `;
+          </div>
+        `;
         document.body.appendChild(popup);
 
         // Находим кнопку закрытия попапа и добавляем обработчик события
