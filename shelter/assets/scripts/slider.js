@@ -1,3 +1,5 @@
+const petButtons = document.querySelectorAll('.card__button');
+
 // Выбираем элемент контейнера для карточек
 const cardContainer = document.querySelector(".pets__slider");
 
@@ -64,7 +66,23 @@ function showPet(index) {
     buttonRight.addEventListener('click', showNextPet);
 
 
+    // функция уменьшает текущий индекс на 1 , если индекс < 0 , то он устанавливается на последний индекс в массиве
+    function showPrevPet() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = pets.length - 1;
+        }
+        showPet(currentIndex);
+    }
 
+    // функция увеличивает текущий индекс на 1 , если индекс > pets.length - 1 , то он устанавливается на 0 чтобы перейти к первой карточке.
+    function showNextPet() {
+        currentIndex++;
+        if (currentIndex > pets.length - 1) {
+            currentIndex = 0;
+        }
+        showPet(currentIndex);
+    }
 
     // Добавляем обработчики событий для кнопок "Learn more" в каждой карточке
     const buttons = document.querySelectorAll('.card__button');
@@ -74,10 +92,26 @@ function showPet(index) {
     function showPetModal(event, pet) {
         // Получаем контент, который нужно отобразить в попапе
         const popupContent = `
-          <h2>${pet.name}</h2>
           <img src="${pet.img}" alt="${pet.name}">
-          <p>${pet.description}</p>
+          <div class="main-content">
+           <h3>${pet.name}</h3>
+           <div class="breed">
+           <h4>${pet.type} - </h4>
+           <h4>${pet.breed}</h4>
+           </div>
+          <p><h5>${pet.description}</h5></p>
+          <div class="list">
+          <ul>
+          <li>${pet.age}</li>
+          <li>${pet.inoculations}</li>
+          <li>${pet.diseases}</li>
+          <li>${pet.parasites}</li>
+          </ul>
+          </div>
+          <button class="popup__close">x</button>
+          </div>
         `;
+
 
         // Добавляем html-код попапа в конец body-элемента
         const popup = document.createElement('div');
@@ -85,7 +119,7 @@ function showPet(index) {
         popup.innerHTML = `
           <div class="popup__content">
             ${popupContent}
-            <button class="popup__close">Закрыть</button>
+
           </div>
         `;
         document.body.appendChild(popup);
@@ -107,21 +141,5 @@ function showPet(index) {
 }
 
 
-// функция уменьшает текущий индекс на 1 , если индекс < 0 , то он устанавливается на последний индекс в массиве
-function showPrevPet() {
-    currentIndex--;
-    if (currentIndex < 0) {
-        currentIndex = pets.length - 1;
-    }
-    showPet(currentIndex);
-}
 
-// функция увеличивает текущий индекс на 1 , если индекс > pets.length - 1 , то он устанавливается на 0 чтобы перейти к первой карточке.
-function showNextPet() {
-    currentIndex++;
-    if (currentIndex > pets.length - 1) {
-        currentIndex = 0;
-    }
-    showPet(currentIndex);
-}
 
