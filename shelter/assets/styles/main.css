@@ -161,7 +161,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 123px;
+  -moz-column-gap: 123px;
+       column-gap: 123px;
 }
 
 .donation__heading {
@@ -344,7 +345,8 @@ html {
   align-items: center;
   justify-content: center;
   row-gap: 61px;
-  column-gap: 119px;
+  -moz-column-gap: 119px;
+       column-gap: 119px;
 }
 .help .help-content .list .flex-item {
   display: flex;
@@ -386,7 +388,8 @@ html {
   padding-bottom: 100px;
   margin: 0 auto;
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   max-width: 915px;
   height: 282px;
 }
@@ -464,7 +467,8 @@ html {
   margin: 0 auto;
   max-width: 1280px;
   height: 350px;
-  column-gap: 159px;
+  -moz-column-gap: 159px;
+       column-gap: 159px;
 }
 .footer .footer__content .footer__content-main {
   display: flex;
@@ -533,7 +537,8 @@ html {
 .footer .footer__content .footer-locations {
   flex-direction: column;
   display: flex;
-  column-gap: 159px;
+  -moz-column-gap: 159px;
+       column-gap: 159px;
 }
 .footer .footer__content .footer-locations .footer__title {
   max-width: 302px;
@@ -589,6 +594,4 @@ html {
 }
 .footer .footer__content .footer__dog {
   padding-top: 40px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
