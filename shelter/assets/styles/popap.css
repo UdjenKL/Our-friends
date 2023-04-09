@@ -71,6 +71,11 @@
   width: 500px;
   height: auto;
 }
+@media (max-width: 320px) {
+  .popup__content img {
+    display: none;
+  }
+}
 
 /* Кнопка закрытия попапа */
 .popup__close {
@@ -80,7 +85,7 @@
   position: absolute;
   width: 52px;
   height: 52px;
-  left: 935px;
+  left: 714px;
   top: -41px;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
@@ -88,6 +93,32 @@
 .popup__close:hover {
   cursor: pointer;
   /* Дополнительные стили при наведении */
+}
+
+@media (max-width: 2560px) {
+  .popup__close {
+    left: 930px;
+  }
+}
+@media (max-width: 1845px) {
+  .popup__close {
+    left: 730px;
+  }
+}
+@media (max-width: 768px) {
+  .popup__close {
+    left: 215px;
+  }
+}
+@media (max-width: 768px) {
+  .popup__close {
+    left: 661px;
+  }
+}
+@media (max-width: 320px) {
+  .popup__close {
+    left: 207px;
+  }
 }
 
 /*# sourceMappingURL=popap.css.map */

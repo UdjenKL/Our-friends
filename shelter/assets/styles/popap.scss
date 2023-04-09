@@ -16,7 +16,7 @@
 .popup__content {
 
   max-width: 900px;
-  height:auto;
+  height: auto;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -30,14 +30,15 @@
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    padding:50px 20px 88px 29px;
+    padding: 50px 20px 88px 29px;
 
     .breed {
       display: flex;
       padding-bottom: 40px;
     }
+
     h3 {
-      font-family: 'Georgia','sans-serif';
+      font-family: 'Georgia', 'sans-serif';
       font-style: normal;
       font-weight: 400;
       font-size: 35px;
@@ -45,8 +46,9 @@
       letter-spacing: 0.06em;
       color: #000000;
     }
+
     h4 {
-      font-family: 'Georgia','sans-serif';
+      font-family: 'Georgia', 'sans-serif';
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
@@ -54,9 +56,10 @@
       letter-spacing: 0.06em;
       color: #000000;
     }
+
     h5 {
       /* h5 */
-      font-family: 'Georgia','sans-serif';
+      font-family: 'Georgia', 'sans-serif';
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -64,6 +67,7 @@
       letter-spacing: 0.06em;
       color: #000000;
     }
+
     .list {
       margin-top: 40px;
       margin-left: 20px;
@@ -71,6 +75,9 @@
   }
 
   img {
+    @media (max-width: 320px) {
+      display: none;
+    }
     width: 500px;
     height: auto;
   }
@@ -85,16 +92,43 @@
   position: absolute;
   width: 52px;
   height: 52px;
-  left: 935px;
+  left: 714px;
   top: -41px;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
 
-  // TODO: разобраться почему не срабатывает ховер
+
+
+
   &:hover {
     cursor: pointer;
     /* Дополнительные стили при наведении */
   }
 }
+@media (max-width: 2560px) {
+  .popup__close {
+    left: 930px;
+  }
+}
+@media (max-width: 1845px) {
+  .popup__close {
+    left: 730px;
+  }
+}
+@media (max-width: 768px) {
+  .popup__close {
+    left: 215px;
+  }
+}
 
+@media (max-width: 768px) {
+  .popup__close {
+    left: 661px;
+  }
+}
 
+@media (max-width: 320px) {
+  .popup__close {
+    left: 207px;
+  }
+}
