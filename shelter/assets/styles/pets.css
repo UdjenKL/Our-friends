@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .header {
   max-width: 3840px;
   height: auto;
@@ -210,8 +214,7 @@ html {
   margin: 0 auto;
   max-width: 1280px;
   height: 350px;
-  -moz-column-gap: 159px;
-       column-gap: 159px;
+  column-gap: 159px;
 }
 .footer .footer__content .footer__title {
   max-width: 279px;
@@ -276,8 +279,7 @@ html {
 .footer .footer__content .footer-locations {
   flex-direction: column;
   display: flex;
-  -moz-column-gap: 159px;
-       column-gap: 159px;
+  column-gap: 159px;
 }
 .footer .footer__content .footer-locations .footer__title {
   max-width: 302px;
@@ -333,4 +335,6 @@ html {
 }
 .footer .footer__content .footer__dog {
   padding-top: 40px;
-}/*# sourceMappingURL=pets.css.map */
+}
+
+/*# sourceMappingURL=pets.css.map */
