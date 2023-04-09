@@ -44,7 +44,7 @@ function showPet(index) {
             <img src="${pets[(randomIndex + 1) % pets.length].img}" alt="${pets[(randomIndex + 1) % pets.length].name}">
             <h3>${pets[(randomIndex + 1) % pets.length].name}</h3>
             <button class="card__button">Learn more</button>
-        </div>
+           </div>
         <div class="card">
             <img src="${pets[(randomIndex + 2) % pets.length].img}" alt="${pets[(randomIndex + 2) % pets.length].name}">
             <h3>${pets[(randomIndex + 2) % pets.length].name}</h3>
@@ -138,6 +138,7 @@ function showPet(index) {
             popup.remove();
         }
     }
+
 }
 
 
