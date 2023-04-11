@@ -155,7 +155,7 @@ body {
   position: relative;
   height: 90.8rem;
   padding-top: 3rem;
-  background: url(/assets/img/images/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background: url(../img/images/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .not-only-content {
@@ -231,8 +231,6 @@ body {
   position: absolute;
   bottom: 0;
 }
-
-/* ABOUT */
 
 .about {
   height: 58.8rem;
@@ -335,12 +333,12 @@ body {
 }
 
 .arrow-left {
-  background: url("/assets/img/images/ArrowLeft.png") no-repeat;
+  background: url("../img/images/ArrowLeft.png") no-repeat;
   background-position: center;
 }
 
 .arrow-right {
-  background: url("/assets/img/images/ArrowRight.png") no-repeat;
+  background: url("../img/images/ArrowRight.png") no-repeat;
   background-position: center;
 }
 
@@ -382,35 +380,35 @@ body {
 }
 
 .card-img-0 {
-  background: url("/assets/img/images/pets-jennifer.png") no-repeat;
+  background: url("../img/images/pets-jennifer.png") no-repeat;
 }
 
 .card-img-1 {
-  background: url("/assets/img/images/pets-sophia.png") no-repeat;
+  background: url("../img/images/pets-sophia.png") no-repeat;
 }
 
 .card-img-2 {
-  background: url("/assets/img/images/pets-woody.png") no-repeat;
+  background: url("../img/images/pets-woody.png") no-repeat;
 }
 
 .card-img-3 {
-  background: url("/assets/img/images/pets-scarlet.png") no-repeat;
+  background: url("../img/images/pets-scarlet.png") no-repeat;
 }
 
 .card-img-4 {
-  background: url("/assets/img/images/pets-katrine.png") no-repeat;
+  background: url("../img/images/pets-katrine.png") no-repeat;
 }
 
 .card-img-5 {
-  background: url("/assets/img/images/pets-timmy.png") no-repeat;
+  background: url("../img/images/pets-timmy.png") no-repeat;
 }
 
 .card-img-6 {
-  background: url("/assets/img/images/pets-freddie.png") no-repeat;
+  background: url("../img/images/pets-freddie.png") no-repeat;
 }
 
 .card-img-7 {
-  background: url("/assets/img/images/pets-charly.png") no-repeat;
+  background: url("../img/images/pets-charly.png") no-repeat;
 }
 
 .card-info {
@@ -547,39 +545,39 @@ body {
 }
 
 .icon-pet-food {
-  background: url("/assets/img/svg/petfood.svg") no-repeat;
+  background: url("../img/svg/petfood.svg") no-repeat;
 }
 
 .icon-transportation {
-  background: url("/assets/img/svg/transportation.svg") no-repeat;
+  background: url("../img/svg/transportation.svg") no-repeat;
 }
 
 .icon-toys {
-  background: url("/assets/img/svg/toys.svg") no-repeat;
+  background: url("../img/svg/toys.svg") no-repeat;
 }
 
 .icon-bowls-and-cups {
-  background: url("/assets/img/svg/bowls-and-cups.svg") no-repeat;
+  background: url("../img/svg/bowls-and-cups.svg") no-repeat;
 }
 
 .icon-shampoos {
-  background: url("/assets/img/svg/shampoos.svg") no-repeat;
+  background: url("../img/svg/shampoos.svg") no-repeat;
 }
 
 .icon-vitamins {
-  background: url("/assets/img/svg/vitamins.svg") no-repeat;
+  background: url("../img/svg/vitamins.svg") no-repeat;
 }
 
 .icon-medicines {
-  background: url("/assets/img/svg/medicines.svg") no-repeat;
+  background: url("../img/svg/medicines.svg") no-repeat;
 }
 
 .icon-collars-leashes {
-  background: url("/assets/img/svg/collars-leashes.svg") no-repeat;
+  background: url("../img/svg/collars-leashes.svg") no-repeat;
 }
 
 .icon-sleeping-area {
-  background: url("/assets/img/svg/sleeping-area.svg") no-repeat;
+  background: url("../img/svg/sleeping-area.svg") no-repeat;
 }
 
 .help-text {
@@ -607,7 +605,7 @@ body {
   width: 50.5rem;
   height: 26.1rem;
   margin-left: 0.1rem;
-  background: url("/assets/img/images/donation-dog.png") no-repeat;
+  background: url("../img/images/donation-dog.png") no-repeat;
   background-size: contain;
 }
 
@@ -659,7 +657,7 @@ body {
 .credit-card-img {
   width: 3rem;
   height: 2.3rem;
-  background: url("/assets/img/svg/credit-card.svg");
+  background: url("../img/svg/credit-card.svg");
 }
 
 .credit-card-number {
@@ -680,7 +678,7 @@ body {
 .footer {
   height: 35rem;
   margin: 0 auto;
-  background: url(/assets/img/images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url(../img/images/noise_transparent.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 .footer-content {
@@ -731,14 +729,14 @@ body {
   width: 4rem;
   height: 3.2rem;
   margin-top: -0.1rem;
-  background: url("/assets/img/svg/mail.svg") no-repeat;
+  background: url("../img/svg/mail.svg") no-repeat;
 }
 
 .contacts-phone-icon {
   width: 4rem;
   height: 3.2rem;
   margin-top: 0.1rem;
-  background: url("/assets/img/svg/phone.svg") no-repeat;
+  background: url("../img/svg/phone.svg") no-repeat;
 }
 
 .contacts-email-text,
@@ -775,7 +773,7 @@ body {
   height: 3.2rem;
   margin-top: -0.1rem;
   margin-left: -0.1rem;
-  background: url("/assets/img/svg/locations.svg") no-repeat;
+  background: url("../img/svg/locations.svg") no-repeat;
 }
 
 .locations-icon2 {
@@ -794,6 +792,6 @@ body {
   width: 30rem;
   height: 31rem;
   margin-left: -0.2rem;
-  background: url("/assets/img/images/footer-puppy.png") no-repeat;
+  background: url("../img/images/footer-puppy.png") no-repeat;
   background-size: contain;
 }
