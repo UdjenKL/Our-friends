@@ -422,7 +422,7 @@ body {
 .card-name {
   margin-top: 3rem;
   margin-left: 0.25rem;
-  font-family: Georgia;
+  font-family: Georgia,'sans-serif';
   font-size: 2rem;
   line-height: 2.27rem;
   letter-spacing: 0.12rem;
@@ -450,8 +450,8 @@ body {
 }
 
 .card-link {
-  font-family: Georgia;
-  font-size: 1.7rem;
+  font-family: Georgia,'sans-serif';
+  font-size: 1.6rem;
   line-height: 2.21rem;
   letter-spacing: 0.099rem;
   color: #292929;
