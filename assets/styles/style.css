@@ -189,7 +189,7 @@ body {
   height: 5.2rem;
   margin-top: 4.2rem;
   margin-left: 0.01rem;
-  padding: 1.5rem 4.5rem;
+  padding: 1.5rem 3.9rem;
   background-color: #f1cdb3;
   border: none;
   border-radius: 10rem;
@@ -487,10 +487,10 @@ body {
 
 .our-friends-link {
   padding-left: 0.19rem;
-  font-family: Georgia;
-  font-size: 1.7rem;
-  line-height: 2.21rem;
-  letter-spacing: 0.103rem;
+  font-family: Georgia,'sans-serif';
+  font-size: 1.5rem;
+  line-height: 2.19rem;
+  letter-spacing: 0.100rem;
   color: #292929;
 }
 
