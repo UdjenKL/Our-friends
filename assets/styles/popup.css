@@ -72,7 +72,7 @@ body {
   width: 1.2rem;
   height: 1.2rem;
   margin: 1.8rem;
-  background: url("/assets/img/svg/popup.png") no-repeat;
+  background: url("../img/svg/popup.png") no-repeat;
 }
 
 .popup-content {
@@ -91,42 +91,42 @@ body {
 }
 
 .popup-img-0 {
-  background: url("/assets/img/images/pets-jennifer.png") no-repeat;
+  background: url("../img/images/pets-jennifer.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-1 {
-  background: url("/assets/img/images/pets-sophia.png") no-repeat;
+  background: url("../img/images/pets-sophia.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-2 {
-  background: url("/assets/img/images/pets-woody.png") no-repeat;
+  background: url("../img/images/pets-woody.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-3 {
-  background: url("/assets/img/images/pets-scarlet.png") no-repeat;
+  background: url("../img/images/pets-scarlet.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-4 {
-  background: url("/assets/img/images/pets-katrine.png") no-repeat;
+  background: url("../img/images/pets-katrine.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-5 {
-  background: url("/assets/img/images/pets-timmy.png") no-repeat;
+  background: url("../img/images/pets-timmy.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-6 {
-  background: url("/assets/img/images/pets-freddie.png") no-repeat;
+  background: url("../img/images/pets-freddie.png") no-repeat;
   background-size: contain;
 }
 
 .popup-img-7 {
-  background: url("/assets/img/images/pets-charly.png") no-repeat;
+  background: url("../img/images/pets-charly.png") no-repeat;
   background-size: contain;
 }
 

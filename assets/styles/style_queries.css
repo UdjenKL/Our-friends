@@ -484,7 +484,7 @@
   }
 
   .slider-item {
-    /* gap: 3.7rem; */
+
     gap: normal;
   }
 
@@ -551,7 +551,7 @@
 }
 
 @media (max-width: 35em) {
-  /* SECTION - NOT-ONLY */
+
   .not-only {
     height: 108.55rem;
   }
